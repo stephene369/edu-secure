@@ -1,0 +1,40 @@
+rules_version = '2';
+service cloud.firestore {
+  match /databases/{database}/documents {
+    // Règles pour les utilisateurs
+    match /users/{userId} {
+      allow read, write: if request.auth != null && request.auth.uid == userId;
+    }
+    
+    // Règles pour les classes et matières
+    match /classes/{classId} {
+      allow read: if true;
+      allow write: if isProfessor();
+      
+      match /subjects/{subjectId} {
+        allow read: if true;
+        allow write: if isProfessor();
+        
+        match /chapters/{chapterId} {
+          allow read: if true;
+          allow write: if isProfessor();
+          
+          match /subchapters/{subchapterId} {
+            allow read: if true;
+            allow write: if isProfessor();
+            
+            match /lessons/{lessonId} {
+              allow read: if true;
+              allow write: if isProfessor();
+            }
+          }
+        }
+      }
+    }
+    
+    function isProfessor() {
+      return request.auth != null &&
+        get(/databases/$(database)/documents/users/$(request.auth.uid)).data.userType == "professor";
+    }
+  }
+}
