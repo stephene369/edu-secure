@@ -1,11 +1,49 @@
 import { useAuth } from '../contexts/AuthContext'
-import { useNavigate, Link } from 'react-router-dom'
-import { useEffect } from 'react'
-import { FaCheckCircle, FaTachometerAlt, FaSignOutAlt, FaChalkboardTeacher, FaUserGraduate } from 'react-icons/fa'
+import { useNavigate } from 'react-router-dom'
+import { useState, useEffect } from 'react'
+import { 
+  FaBook, FaStar, FaUsers, FaPlayCircle, FaClock,
+  FaGraduationCap, FaChalkboardTeacher, FaBriefcase,
+  FaRocket, FaAward, FaShieldAlt, FaMobileAlt,
+  FaMoneyBillWave, FaGift, FaHandshake, FaShoppingCart,
+  FaInfoCircle, FaUser, FaArrowRight
+} from 'react-icons/fa'
+
+// Composants séparés pour une meilleure organisation
+import Header from './welcome/Header'
+import HeroSection from './welcome/HeroSection'
+import CategoriesSection from './welcome/CategoriesSection'
+import FeaturedCoursesSection from './welcome/FeaturedCoursesSection'
+import SimulationsSection from './welcome/SimulationsSection'
+import USPSection from './welcome/USPSection'
+import StatsSection from './welcome/StatsSection'
+import TestimonialsSection from './welcome/TestimonialsSection'
+import CTASection from './welcome/CTASection'
+import CourseModal from './welcome/CourseModal'
 
 export default function Welcome() {
   const { currentUser, logout } = useAuth()
   const navigate = useNavigate()
+  const [selectedCourse, setSelectedCourse] = useState(null)
+  const [isScrolled, setIsScrolled] = useState(false)
+
+  useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 50)
+    }
+    window.addEventListener('scroll', handleScroll)
+    return () => window.removeEventListener('scroll', handleScroll)
+  }, [])
+
+  // Données partagées entre les composants
+  const appData = {
+    stats: [
+      { value: '5,000+', label: 'Élèves actifs' },
+      { value: '200+', label: 'Cours disponibles' },
+      { value: '150+', label: 'Enseignants qualifiés' },
+      { value: '95%', label: 'Taux de réussite' }
+    ]
+  }
 
   const handleLogout = async () => {
     try {
@@ -18,87 +56,76 @@ export default function Welcome() {
 
   const getDashboardLink = () => {
     if (currentUser?.userType === 'professor') {
-      return '/professor/dashboard'
+      return '/teacher/dashboard'
+    } else if (currentUser?.userType === 'recruiter') {
+      return '/recruiter/dashboard'
+    } else if (currentUser?.userType === 'committee') {
+      return '/committee/dashboard'
     }
-    return '/dashboard'
-  }
-
-  const getDashboardIcon = () => {
-    if (currentUser?.userType === 'professor') {
-      return <FaChalkboardTeacher className="mr-2" size={18} />
-    }
-    return <FaUserGraduate className="mr-2" size={18} />
+    return '/student/dashboard'
   }
 
   const getDashboardText = () => {
     if (currentUser?.userType === 'professor') {
-      return 'Dashboard Professeur'
+      return 'Espace Enseignant'
+    } else if (currentUser?.userType === 'recruiter') {
+      return 'Espace Entreprise'
+    } else if (currentUser?.userType === 'committee') {
+      return 'Espace Comité'
     }
-    return 'Dashboard Élève'
+    return 'Espace Élève'
+  }
+
+  const handleCourseAction = (course) => {
+    if (!currentUser) {
+      navigate('/login', { state: { from: 'course', courseId: course.id } })
+      return
+    }
+    // Logique d'achat pour utilisateur connecté
+    alert(`Redirection vers le paiement pour "${course.title}" - ${course.price} FCFA`)
   }
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 to-indigo-100 flex items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
-      <div className="max-w-md w-full space-y-8">
-        <div className="text-center">
-          <h1 className="text-4xl font-bold text-blue-600 mb-4">
-            EduSecure+
-          </h1>
-          <div className="bg-white rounded-lg shadow-lg p-8">
-            <div className="mb-6">
-              <FaCheckCircle className="mx-auto text-green-500" size={64} />
-            </div>
-            
-            <h2 className="text-2xl font-bold text-gray-900 mb-4">
-              Bienvenue !
-            </h2>
-            
-            <div className="space-y-3 text-left">
-              <p className="text-gray-600">
-                <strong>Nom :</strong> {currentUser?.firstName} {currentUser?.lastName}
-              </p>
-              <p className="text-gray-600">
-                <strong>Email :</strong> {currentUser?.email}
-              </p>
-              <p className="text-gray-600">
-                <strong>Type :</strong> {
-                  currentUser?.userType === 'student' ? 'Élève' :
-                  currentUser?.userType === 'parent' ? 'Parent' :
-                  currentUser?.userType === 'professor' ? 'Professeur' : 'Utilisateur'
-                }
-              </p>
-              {currentUser?.grade && (
-                <p className="text-gray-600">
-                  <strong>Classe :</strong> {currentUser.grade.toUpperCase()}
-                </p>
-              )}
-              {currentUser?.speciality && (
-                <p className="text-gray-600">
-                  <strong>Spécialité :</strong> {currentUser.speciality}
-                </p>
-              )}
-            </div>
+    <div className="min-h-screen bg-white">
+      <Header 
+        currentUser={currentUser}
+        isScrolled={isScrolled}
+        getDashboardLink={getDashboardLink}
+        getDashboardText={getDashboardText}
+        handleLogout={handleLogout}
+      />
 
-            <div className="mt-8 space-y-4">
-              <Link
-                to={getDashboardLink()}
-                className="w-full bg-blue-600 hover:bg-blue-700 text-white font-medium py-2 px-4 rounded-lg transition-colors flex items-center justify-center"
-              >
-                {getDashboardIcon()}
-                {getDashboardText()}
-              </Link>
-              
-              <button
-                onClick={handleLogout}
-                className="w-full bg-gray-600 hover:bg-gray-700 text-white font-medium py-2 px-4 rounded-lg transition-colors flex items-center justify-center"
-              >
-                <FaSignOutAlt className="mr-2" size={18} />
-                Se déconnecter
-              </button>
-            </div>
-          </div>
-        </div>
-      </div>
+      <HeroSection 
+        currentUser={currentUser}
+        stats={appData.stats}
+        getDashboardLink={getDashboardLink}
+      />
+
+      <CategoriesSection />
+
+      <FeaturedCoursesSection 
+        onCourseAction={handleCourseAction}
+        onCourseSelect={setSelectedCourse}
+      />
+
+      <SimulationsSection />
+
+      <USPSection currentUser={currentUser} />
+
+      <StatsSection />
+
+      <TestimonialsSection />
+
+      <CTASection 
+        currentUser={currentUser}
+        getDashboardLink={getDashboardLink}
+      />
+
+      <CourseModal 
+        course={selectedCourse}
+        onClose={() => setSelectedCourse(null)}
+        onCourseAction={handleCourseAction}
+      />
     </div>
   )
 }

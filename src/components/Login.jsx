@@ -1,7 +1,16 @@
 import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
+
+
 import { useAuth } from '../contexts/AuthContext'
-import { MdError, MdEmail, MdLock, MdVisibility, MdVisibilityOff, MdLogin, MdInfo } from 'react-icons/md'
+import { 
+  MdError, 
+  MdEmail, 
+  MdLock, 
+  MdVisibility, 
+  MdVisibilityOff, 
+  MdLogin 
+} from 'react-icons/md'
 
 export default function Login() {
   const [email, setEmail] = useState('')
@@ -16,6 +25,8 @@ export default function Login() {
   const handleSubmit = async (e) => {
     e.preventDefault()
     
+    console.log('🚀 Début de la connexion')
+    
     if (!email || !password) {
       return setError('Veuillez remplir tous les champs')
     }
@@ -23,10 +34,39 @@ export default function Login() {
     try {
       setError('')
       setLoading(true)
-      await login(email, password)
-      navigate('/welcome')
+
+
+      
+      console.log('📧 Tentative de connexion avec:', email)
+      
+      // Attendre la connexion
+      const result = await login(email, password)
+      console.log('✅ Connexion réussie:', result.user.email)
+      
+      // Redirection immédiate vers Welcome
+      console.log('🔄 Redirection vers /welcome')
+      navigate('/welcome', { replace: true })
+      
     } catch (error) {
-      setError(error.message)
+
+      console.error('❌ Erreur de connexion:', error)
+      
+      // Messages d'erreur plus spécifiques
+      let errorMessage = 'Erreur de connexion'
+      
+      if (error.code === 'auth/user-not-found') {
+        errorMessage = 'Aucun compte trouvé avec cet email'
+      } else if (error.code === 'auth/wrong-password') {
+        errorMessage = 'Mot de passe incorrect'
+      } else if (error.code === 'auth/invalid-email') {
+        errorMessage = 'Format d\'email invalide'
+      } else if (error.code === 'auth/too-many-requests') {
+        errorMessage = 'Trop de tentatives. Réessayez plus tard'
+      } else {
+        errorMessage = error.message || 'Email ou mot de passe incorrect'
+      }
+      
+      setError(errorMessage)
     } finally {
       setLoading(false)
     }
@@ -80,6 +120,7 @@ export default function Login() {
                   onChange={(e) => setEmail(e.target.value)}
                   className="appearance-none relative block w-full pl-10 pr-3 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-lg focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm"
                   placeholder="votre@email.com"
+                  disabled={loading}
                 />
               </div>
             </div>
@@ -102,11 +143,14 @@ export default function Login() {
                   onChange={(e) => setPassword(e.target.value)}
                   className="appearance-none relative block w-full pl-10 pr-10 py-2 border border-gray-300 placeholder-gray-500 text-gray-900 rounded-lg focus:outline-none focus:ring-blue-500 focus:border-blue-500 focus:z-10 sm:text-sm"
                   placeholder="Votre mot de passe"
+                  disabled={loading}
                 />
                 <button
                   type="button"
                   onClick={togglePasswordVisibility}
-                  className="absolute inset-y-0 right-0 pr-3 flex items-center hover:bg-gray-50 rounded-r-lg transition-colors"
+
+                  disabled={loading}
+                  className="absolute inset-y-0 right-0 pr-3 flex items-center hover:bg-gray-50 rounded-r-lg transition-colors disabled:opacity-50"
                 >
                   {showPassword ? (
                     <MdVisibilityOff size={20} color="#6b7280" />
@@ -127,7 +171,8 @@ export default function Login() {
               {loading ? (
                 <div className="flex items-center">
                   <div className="animate-spin rounded-full h-4 w-4 border-b-2 border-white mr-2"></div>
-                  Connexion...
+
+                  Connexion en cours...
                 </div>
               ) : (
                 <div className="flex items-center">
@@ -147,19 +192,9 @@ export default function Login() {
             </p>
           </div>
 
-          {/* Compte de test */}
-          <div className="mt-4 p-3 bg-yellow-50 border border-yellow-200 rounded-lg">
-            <div className="flex items-start">
-              <MdInfo size={20} className="mr-2 mt-0.5" color="#d97706" />
-              <div>
-                <p className="text-xs text-yellow-800">
-                  <strong>Compte de test :</strong><br />
-                  Email: test@test.com<br />
-                  Mot de passe: password
-                </p>
-              </div>
-            </div>
-          </div>
+
+          {/* Compte de test pour développement */}
+
         </form>
       </div>
     </div>

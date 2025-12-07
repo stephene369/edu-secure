@@ -1,0 +1,156 @@
+https://www.youtube.com/shorts/pXHm9R1vKrI
+
+
+-- Je suis stephene, Developer, et fondeur et CEO , 
+
+
+- Manque d'infrastructure : manque au enseignant,de site internet pour continuer l'apprentissage extra scolaire
+- Valorisation limite.: les enseignant ne savent pas quil valoriser leurs competence meme au dela des classe, 
+par le numerique 
+
+
+-Seulon les donnees de L'INSTAD en 2018 
+--monetization directe
+-Ne pas parler de besoin en financement
+
+
++++ DreamFlow
+++ SchoolMouv
+
+
+
+################################## NOTE 
+
+Stephene WANTCHEKON : Developer , fondateur , CEO.
+Anne-MArie, : Product Manager
+Joseph, TOHOESSOU : Responsable des operations
+Huguette HONTONGNON : Journaliste Responsable Marketing
+
+
+
+
+- Merci pour la question, 
+Educ
+tous d'abord je vais aborder le probleme au niveau des enseignants.. 
+en enffet, a leurs actuelle, les enseignant ne profite pas encore reelement des atous du numerique pour faire valoir leur competence. 
+Quand je prend l'exemple d'un vacataire, qui a une famille a nourit, le system classic, ne lui permet pas a la fin du mois d'avoir un revenue assez consequent pour subvenir a tous les besoins. 
+Donc nous voulons les aider a mieux profiter des outils du nemerique, pour qu'il monetizer egalement leurs competence en ligne en les transformant en des entrepreneur du savoir.. et ca , au dela de leurs environement imediat : 
+Ex: en enseignant sud - Nord.. 
+
+
+Autre probleme, c' est au niveau des eleves, 
+- Les eleves sont a la rechercher des resources educative, je veux dire des exercices corriges,
+des TD, les ancient epreuve corrige . etc... 
+C'est generalement apres le BAC, quil se familiarize avec les outils du numerique,et qu'il comprenne reellement que tout contenu educatif peu etre disponible et accessible en ligne, et que les appareils ne serve pas qu'a la distraction, et que déja meme au secondaire ou au primaire, qu'il peuvent apprendre en linge. 
+Donc nous venons mettre a leur dispositions, ses cours , exercices,TD,et en plus le donnee la  culture du numerique. Je veux parler de IA , les outils basics, word, excel.
+
+
+- Donc fondamentalement C'est les problemes que educSecu+ resoud.
+
+
+Traction actuelle (pilot : 10 enseignants contactés) + objectifs 12 moins (15 000 élèves).
+
+
+Nous attendons surtout d’être aidés à entrer en contact avec des enseignants et des écoles, à travers des partenariats. Nous aimerions aussi bénéficier de soutien pour affiner et améliorer notre idée, grâce au leadership et au mentoring, notamment au niveau des partenariats.
+
+
+ - Persona 
+- Parcour utilisateur, (utilization des moyens de bords)
+
+
+
+##################### ######### ######## ########
+
+
+« Bonjour, je suis Stéphene WANTCHEKON, Déveolppeur , co-fondateur et CEO d’EducSecu+. Nous transformons les enseignants en entrepreneurs du savoir et permettons aux élèves d’accéder 24/7 à un soutien scolaire de qualiter, a travers : (video, quiz, TD) et à des compétences numériques.
+
+
+EducSecu+ transforme les enseignants en entrepreneurs du savoir et permet aux élèves 
+d’accéder 24/7 à un soutien scolaire de qualité et à des compétences numériques.
+
+
+« EducSecu+ est une plateforme qui aide les élèves à réussir leurs examens et à acquérir des compétences numériques, tout en transformant les enseignants en entrepreneurs du savoir grâce à la monétisation de leur compétences. »
+
+
+Mission : Offrir une plateforme EdTech qui permet aux enseignants du primaire/secondaire au Bénin de vendre des cours (vidéos, quiz, TD) et aux élèves d’accéder à du contenu validé à la demande.
+
+« Qu’attendez-vous du programme Spark précisément ? »
+→ mentorat go-to-market, intros institutions/édus, aide à structurer modèle financier et bêta scale.*
+
+
+
+
+
+######## Apres Meeting 
+Premiere page doit etre une welcome page 
+Notez le proesseurs mettre en avant les meilleurs cours.
+Besoin de marketer le produits. 
+Notre en trprise doit exister 
+On doit creee une sociater,SAS , avec tous les cofondaterus qui apparaisse
+CRee le plus rapidement
+
+_ On doit Etre completement deployer avec un vrai nom de demaine,. 
+Il nous faut une vrai page d'acceeil qui explique et propose un parcours utilsateur
+pour l'utilisteru, 
+
+- On doit avoir 100 professeurs. et 3000 eleves inscrits, en 3 mois.  
+- Aller dans les ecoles.
+
+
+-- Nous allons travailler apres sur une feuille de routes. 
+
+
+
+Vision : Rendre l’éducation numérique accessible et valorisante pour chaque élève et chaque enseignant en Afrique.
+
+Mission : Offrir une plateforme qui aide les enseignants à monétiser leurs cours et permet aux élèves d’accéder 24/7 à des contenus éducatifs et numériques fiables.
+
+
+
+- ChatBot
+ 
+
+
+
+
+
+- Gabriel Adjobode 
+
+
+
+
+https://www.lemonde.fr/afrique/article/2020/11/30/classe19-la-solution-numerique-qui-democratise-le-soutien-scolaire-au-benin_6061659_3212.html
+
+https://irawotalents.com/classe-19-education-soutien-scolaire-benin/ 
+http://classe19.com/
+https://www.namecheap.com/
+
+
+
+
+Angelo DAFIA
+21:35
+https://www.lemonde.fr/afrique/article/2020/11/30/classe19-la-solution-numerique-qui-democratise-le-soutien-scolaire-au-benin_6061659_3212.html
+
+https://irawotalents.com/classe-19-education-soutien-scolaire-benin/ 
+
+http://classe19.com/
+
+Angelo DAFIA
+21:46
+https://www.namecheap.com
+
+Angelo DAFIA
+21:47
+https://www.open.bj
+https://www.nom-domaine.bj
+
+Angelo DAFIA
+21:56
+https://www.figma.com
+
+
+
+
+firebase deploy
+

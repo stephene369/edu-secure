@@ -1,6 +1,6 @@
 import { useState } from 'react'
 import { Link, useNavigate } from 'react-router-dom'
-import { useAuth } from '../contexts/AuthContext'
+import { useAuth } from '../contexts/AuthContext.jsx'
 import { 
   FaUser, 
   FaEnvelope, 
@@ -98,7 +98,7 @@ export default function Signup() {
       case 'student':
         return <FaUserGraduate size={24} />
       case 'parent':
-        return <FaUsers size={24} />
+        return <FaUsers size={24} disabled />
       case 'professor':
         return <FaChalkboardTeacher size={24} />
       default:
@@ -392,4 +392,3 @@ export default function Signup() {
     </div>
   )
 }
-

@@ -1,0 +1,27 @@
+classes (collection)
+│
+├── {gradeId} (document) - Ex: "cm1", "6eme"
+│   │
+│   └── subjects (collection)
+│       │
+│       ├── {subjectId} (document) - Ex: "math", "french"
+│       │   │
+│       │   └── chapters (collection)
+│       │       │
+│       │       ├── {chapterId} (document) - Ex: "chapitre1"
+│       │       │   │
+│       │       │   └── subchapters (collection)
+│       │       │       │
+│       │       │       ├── {subchapterId} (document) - Ex: "souschapitre1"
+│       │       │       │   │
+│       │       │       │   └── lessons (collection)
+│       │       │       │       │
+│       │       │       │       └── {lessonId} (document) - Leçon
+│       │       │       │
+│       │       │       └── ... autres sous-chapitres
+│       │       │
+│       │       └── ... autres chapitres
+│       │
+│       └── ... autres matières
+│
+└── ... autres classes

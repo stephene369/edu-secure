@@ -1,0 +1,309 @@
+- Q: Probleme de 90% des startups 
+R : Le probleme c'est le probleme que la solution resous. 
+
+++ 6 Erreurs a evite 
+
+I. Problème mal défini ou inexistant
+"Solution in Search of a Problem" (SISP)
+L’équipe part d’une idée, d’une technologie ou d’une 
+fonctionnalité innovante sans avoir identifié un besoin réel ou exprimé.
+🟦 Exemple : une application de réalité augmentée pour cartes de 
+visite, sans demande manifeste.
+
+Problème non prioritaire ou insuffisamment douloureux
+La problématique est réelle mais n’est pas considérée comme 
+suffisamment urgente ou importante par les utilisateurs.
+🟦 Exemple : Affirmer en 2000 que les motocyclistes béninois se 
+sentent en danger sur leurs motos sans casques.
+
+Problème trop général ou mal formulé
+La définition est floue, trop large ou non actionnable.
+🟦 Exemple : “Les gens veulent mieux gérer leur temps”.
+
+***** Pour une platfor Edtech donc preciser. 
+Est ce le manque de materiel dans les zones rurals ? 
+Assai limite aux ressources de preparation aux examens ?
+etc.. Identifier le probleme reelement
+
+
+
+
+II. Biais cognitifs du fondateur
+Biais de projection personnelle
+Le fondateur part de son expérience personnelle et généralise 
+abusivement son propre cas.
+🟦 Exemple : développer une application ultra-détaillée 
+d’organisation parce qu’on en ressent soi-même le besoin.
+
+Biais de confirmation
+Les retours positifs provenant d’un cercle proche sont 
+surinterprétés comme validation du marché.
+🟦 Exemple : “Mes amis trouvent l’idée géniale.”
+
+Biais d’optimisme
+Sous-estimation de la difficulté à faire adopter une 
+nouvelle solution ou surestimation de l’engagement potentiel des utilisateurs.
+🟦 Exemple : Google a arrêté depuis 2006 166 produits qui 
+n’ont jamais décollé comme Google Plus. 
+L’application « Cartes » de Apple est aussi un échec complet.
+
+
+
+III. Problème mal positionné dans le cycle utilisateur
+Problème trop en amont (non encore activé)
+Le besoin existe, mais il n’est pas encore perçu 
+ou priorisé par la cible.
+🟦 Exemple : les assurances habitations au Bénin ou en Italie, comparées à la France.
+
+Problème secondaire ou dérivé
+L’attention est portée sur un symptôme plutôt que sur la cause racine.
+🟦 Exemple : proposer des outils de motivation pour des étudiants en décrochage, 
+sans adresser l’accès aux contenus pédagogiques.
+
+
+
+IV. Problème mal segmenté
+Ciblage trop large ou imprécis
+La startup s’adresse à “tout le monde”, rendant la proposition floue et inefficace.
+🟦 Exemple : “Tout le monde veut manger plus sainement.”
+
+Problème réel mais pour une cible difficilement accessible ou non solvable
+La cible est mal équipée, peu digitalisée, ou sans capacité de paiement.
+🟦 Exemple : proposer un outil SaaS à des agriculteurs isolés sans connectivité fiable.
+
+
+
+V. Problème structurellement complexe (les “tarpit ideas”)
+Problème légitime mais à forte complexité opérationnelle
+Les obstacles logistiques, réglementaires, financiers ou techniques sont majeurs 
+et ralentissent considérablement l’exécution.
+🟦 Exemple : développer une école low-cost avec un enseignement d’excellente qualité.
+
+Problème réel mais dans un secteur très lent à évoluer
+Malgré une douleur évidente, les processus sont figés ou résistants à l’innovation.
+🟦 Exemple : solutions à destination de l’éducation publique ou du secteur hospitalier.
+
+
+
+V. Problème structurellement complexe (les “tarpit ideas”)
+Problème légitime mais à forte complexité opérationnelle
+Les obstacles logistiques, réglementaires, financiers ou techniques 
+sont majeurs et ralentissent considérablement l’exécution.
+🟦 Exemple : développer une école low-cost avec un enseignement d’excellente qualité.
+
+Problème réel mais dans un secteur très lent à évoluer
+Malgré une douleur évidente, les processus sont figés ou résistants à l’innovation.
+🟦 Exemple : solutions à destination de l’éducation publique ou du secteur hospitalier.
+
+
+VI. Validation insuffisante ou biaisée
+Absence de validation terrain
+Le problème n’a pas été testé ni confronté à des utilisateurs 
+réels via des entretiens, prototypes ou simulations.
+
+Validation qualitative surinterprétée
+Quelques retours enthousiastes sont interprétés comme 
+preuve d’un intérêt généralisé.
+
+Confusion entre intention et action
+Les utilisateurs expriment un intérêt (“je trouve ça intéressant”) 
+mais ne s’engagent pas (“je ne paierais pas / je ne l’utilise pas”).
+
+
+
+
+----------------------------------------------------------
+                            EXEMPLE
+----------------------------------------------------------
+Mais alors, comment bien définir un problème ?
+- Des personnes, organisations ou entités concernées clairement identifiées
+- Qui ont un pain point clair
+- Dans un contexte géographique et temporel bien défini
+- Avec des conséquences néfastes et douloureuses et dont c’est 
+important pour eux de se départir
+- Car aucune solution ou alternative satisfaisante n’existe
+- Et l’on sait expliquer pourquoi
+
+Exemple illustratif :
+    2 millions de personnes
+    N’ont pas accès à l’eau potable
+    En zones rurales au Bénin
+    Réduisant de 10 ans leur espérance de vie
+    Aujourd’hui, elles doivent se contenter de forage de fortune
+    Car l’État central n’a pas les moyens de financer l’extension du réseau dans ces zones à cause de leur faible densité démographique
+
+
+
+
+-------------------------------------------------------------------------------
+Passons à présent à la solution, et sachons la différencier du produit.
+-------------------------------------------------------------------------------
+
+La solution n’est pas le produit
+C’est la manière dont vous comptez résoudre le problème
+Une solution peut se décliner en une multitude de produits
+La logique entre le problème, sa cause racinaire, la solution et le produit est fondamentale !
+
+Exemples :
+
+🎬 Netflix
+Problème : Les clients doivent payer à chaque fois qu’ils veulent visionner un film.
+
+Solution : Proposer un catalogue illimité pour un prix fixe.
+
+Produit : Plateforme de streaming.
+
+
+🏠 Airbnb
+Problème : Les hôtels coûtent chers et n’offrent pas toujours une 
+expérience immersive dans la culture du pays visité.
+
+Solution : Permettre aux voyageurs de dormir chez l’habitant en toute 
+sécurité et à prix compétitif.
+
+Produit : Plateforme de mise en ligne d’offres de logement particuliers, 
+et de réservation régie par les notations réciproques.
+
+
+
+
+-------------------------------------------------------------------------------
+            Focus sur la proposition de valeur
+-------------------------------------------------------------------------------
+C’est la promesse faite à vos clients. C’est ce qu’ils 
+gagnent à utiliser votre service, et qui le distingue de la concurrence.
+
+Voici quelques exemples :
+🎬 Netflix
+Un accès instantané, illimité et personnalisé au plus 
+large catalogue de contenus vidéo — séries, films, 
+documentaires — accessibles à tout moment, sur n’importe 
+quel appareil connecté, à un tarif mensuel abordable, sans publicité.
+
+🏠 Airbnb
+Se sentir comme chez soi partout dans le monde.
+
+
+
+
+
+-------------------------------------------------------------------------------
+Il existe 5 moyens de valider un marché.
+-------------------------------------------------------------------------------
+
+Dans quel(s) cas êtes-vous ?
+Identifier des concurrents directs dont le business atteint une taille critique
+🟦 Exemples : WAVE, ORANGE MONEY
+
+Trouver des « proxies »
+Entreprises offrant des services différents mais activant les 
+mêmes ressorts que votre produit.
+🟦 Exemples : NETFLIX, Spotify
+
+Identifier un acteur ayant réussi à scaler une solution similaire sur un marché étranger
+Dont les facteurs clés du succès sont présents sur le vôtre.
+🟦 Exemples : YANGO, GOZEM
+
+Préempter un marché déjà existant
+En proposant une solution capable de détourner le flux des solutions 
+alternatives actuelles vers les vôtres.
+🟦 Exemples : WETAXI, YANGO
+
+Enregistrer un intérêt ultra fort
+Des ventes ou commandes fermes de plusieurs clients dont le profil est 
+répandu, avant même la disponibilité du produit ou service.
+🟦 Exemple : Dropbox – 75 000 personnes sur liste d’attente en 24h.
+
+
+
+
+-------------------------------------------------------------------------------
+TAM, SAM, SOM.
+-------------------------------------------------------------------------------
+
+Si votre référentiel c’est un continent de 54 pays différents, 
+vos calculs deviennent quasi automatiquement insensés.
+
+
+Total Addressable Market (TAM)
+Identifier les personnes pour qui le problème auquel vous vous attaquez pourrait être réduit aujourd’hui et dans les 2 prochaines années ?
+Regroupez-les en segments auxquels vous affecterez un panier moyen par achat.
+Estimez le nombre de clients potentiels dans chaque segment.
+Définir un nombre d’actes d’achat par an et par segment.
+Calculez le potentiel de chaque segment, et sommelez l’ensemble pour avoir votre TAM.
+
+
+Serviceable Available Market (SAM)
+Le % de marché qui est à votre portée.
+C’est celle que vous êtes rigoureusement en mesure de toucher 
+avec votre infrastructure telle qu’elle existe aujourd’hui.
+
+
+Serviceable Obtainable Market (SOM)
+Le % de marché qui est à votre portée que vous pourrez transformer 
+en client de votre entreprise.
+
+
+
+
+
+
+Qu’est-ce qu’un concurrent ?
+Les concurrents doivent absolument partager :
+Des besoins à satisfaire identiques
+Des profils clients identiques
+Des géographies identiques
+
+
+Comment faire une analyse de la concurrence : Les bonnes pratiques
+Lister les concurrents
+Les rassembler par segments logiques
+Définir pour chaque segment ce qu’ils font mieux que 
+    vous, et ce que vous faites mieux qu’eux
+Expliquer ce que vous apportez de plus au consommateur
+Dites ce que vous avez compris du marché, qui n’a pas été compris par les autres, et qui fait que votre solution aura un grand succès 💡
+→ C’est là votre avantage comparatif, votre secret sauce.
+
+
+
+
+
+
+
+
+
+
+La différence, c’est une vision qui reste vivante et guide chaque décision
+
+Amazon
+Amazon reste guidé par la même vision depuis 30 ans :
+« Être l’entreprise la plus centrée sur le client au monde »
+Résultats concrets de cette vision appliquée :
+Expansion de la vente en ligne de livres → e-commerce global
+Lancement de AWS, devenu le leader mondial du cloud
+Diversification vers le streaming et la logistique
+
+
+Mais comment définir sa vision ?
+La vision n’est pas un slogan marketing :
+C’est le cap qui guide vos choix stratégiques sur le long terme.
+C’est par une vision claire que votre startup trouve son cap.
+
+Clarté
+    - Une phrase courte, compréhensible par tous.
+Inspiration
+    - Elle motive l’équipe, attire les talents et rassure les investisseurs.
+Durabilité
+    - Une vision doit survivre aux pivots et aux changements de business model.
+Impact
+    - Elle exprime la valeur créée pour le client ou la société.
+
+
+
+
+
+
+
+
+
+
